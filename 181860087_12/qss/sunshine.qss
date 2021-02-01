@@ -1,0 +1,60 @@
+QMainWindow
+{
+	background:qconicalgradient(cx:0, cy:0, angle:135,
+	stop:0 rgba(255, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145),
+	stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130),
+	stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69),
+	stop:1 rgba(255, 255, 0, 69));
+}
+QStatusBar
+{
+	border-top:1px solid #aaaaaa;
+	min-height:20px;
+	background: rgba(251, 255, 0, 15)
+}
+QMenuBar::item
+{
+    spacing: 3px;
+    padding: 3px 10px;
+    background: transparent;
+    border-radius: 1px;
+}
+QMenuBar::item:selected
+{
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eeeeee, stop:0.8 #cccccc);/*渐变背景色*/
+}
+QMenuBar::item:pressed
+{
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #dddddd, stop:0.8 #bbbbbb);/*渐变背景色*/
+}
+QMenu
+{
+     background-color: white;
+     border: 1px solid #aaaaaa;
+}
+QMenu::item
+{
+     background-color: transparent;
+     padding:4px 26px 4px 26px;
+ }
+
+QMenu::item:selected
+{
+    background-color: #73c5f1;
+}
+QListView
+{
+	border:1px solid #aaaaaa;
+	selection-background-color: #73c5f1;
+	alternate-background-color:#e9e9e9;
+    outline:none;
+}
+QListView::item
+{
+    min-height:24px;
+    margin-left:40px;
+}
+QGraphicsView
+{
+	border:none;
+}
